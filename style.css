@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  height: 80px;
+  background-color: #242b36;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.cabecalho-logo {
+  width: 170px;
+  margin-bottom: .2em;
+}
+.cabecalho-nav {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+.cabecalho-nav-item {
+  color: white;
+  display: inline-block;
+  line-height: 2;
+  margin: 0 .5em;
+  font-size: 16px;
+}
+.cabecalho-nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans', serif;
+}
+.cabecalho-nav-item a:hover{
+  color: #d45b68;
+}
+.container {
+  padding: 3.5em 5%;
+  margin: 0 auto;
+  width: 1000px;
+}
+main {
+    display: block;
+    width: 100%;
+}
+.conteudo {
+  height: 600px;
+    background-image: url("bg-intro.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .secaoDestaque {
+  text-align: center;
+  background-size: cover;
+  background-color: #00161c;
+  padding: 10em 2em 3em 2em;
+  color: #fff;
+}
+ .secaoDestaque-titulo {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-family: 'Montserrat', serif;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.secaoDestaque-texto {
+  max-width: 600px;
+  margin: 0 auto 2em auto;
+  font-size: 1.25em;
+  font-weight: normal;
+
+}
+  .btnPadrao {
+  border-radius: 5px;
+  border: 0;
+  background-color: #B72E2E;
+  color: #fff;
+  font-size: 1.2em;
+  padding: .3em 1em;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  outline: 0;
+  text-decoration: none;
+}
+
+.btnPadrao:hover,
+.btnPadrao:focus {
+  background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+  cursor: pointer;
+}
+.secaoDiferenciais {
+    
+    padding-bottom: 0;
+    background-color: #f7f4f4;
+  }
+
+.diferenciais {
+  text-align: center;
+}
+
+.diferenciais-diferencial {
+  margin: 0 3em 2em 3em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  max-width: 350px;
+  padding-left: 4em;
+}
+
+.diferenciais-diferencial h2 {
+  color: #4F4C4C;
+  font-size: 1.2em;
+  margin-top: .9em;
+  margin-bottom: .6em;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: 2.5em;
+  padding-left: 42px;
+  padding-top: .5em;
+  transform: translateX(-42px);
+  text-transform: uppercase;
+}
