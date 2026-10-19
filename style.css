@@ -1,191 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Open Sans", sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.cabecalho {
+  min-height: 80px;
+  background-color: #242b36;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0 8%;
+}
+
+.cabecalho-logo {
+  display: block;
+  width: 170px;
+  max-width: 100%;
+}
+
+.cabecalho-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  list-style: none;
+}
+
+.cabecalho-nav-item a {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cabecalho-nav-item a:hover,
+.cabecalho-nav-item a:focus-visible {
+  color: #d45b68;
+}
+
+.conteudo {
+  min-height: 600px;
+  padding-bottom: 4rem;
+  background: url("bg-intro.jpg") center / cover no-repeat;
+  text-align: center;
+}
+
+.secaoDestaque {
+  width: min(665px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) 2rem 3rem;
+  background-color: #00161c;
+  color: #fff;
+}
+
+.secaoDestaque-titulo {
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.secaoDestaque-texto {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.btnPadrao {
+  display: inline-block;
+  padding: 0.45em 1em;
+  border: 0;
+  border-radius: 5px;
+  background-color: #b72e2e;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnPadrao:hover,
+.btnPadrao:focus-visible {
+  background-color: #982525;
+}
+
+.secaoDiferenciais {
+  position: relative;
+  width: min(1000px, calc(100% - 2rem));
+  margin: -1rem auto 0;
+  padding: 3.5rem;
+  background-color: #f7f4f4;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.diferenciais {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  list-style: none;
+  text-align: left;
+}
+
+.diferenciais-diferencial img {
+  display: block;
+  width: auto;
+  height: 42px;
+  margin: 0 auto 1.5rem;
+  object-fit: contain;
+}
+
+.diferenciais-diferencial h2 {
+  margin-bottom: 0.75rem;
+  color: #4f4c4c;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.diferenciais-diferencial p {
+  color: #222;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
   .cabecalho {
-    min-height: 80px;
-    background-color: #242b36;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 0 8%;
+    padding: 1rem 5%;
   }
-  
-  .cabecalho-logo {
-    display: block;
-    width: 170px;
-    max-width: 100%;
-  }
-  
-  .cabecalho-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.25rem 1.25rem;
-    list-style: none;
-  }
-  
-  .cabecalho-nav-item a {
-    color: #fff;
-    font-size: 1rem;
-    line-height: 2;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  
-  .cabecalho-nav-item a:hover,
-  .cabecalho-nav-item a:focus-visible {
-    color: #d45b68;
-  }
-  
-  .conteudo {
-    min-height: 600px;
-    padding-bottom: 4rem;
-    background: url("bg-intro.jpg") center / cover no-repeat;
-    text-align: center;
-  }
-  
-  .secaoDestaque {
-    width: min(665px, calc(100% - 2rem));
-    margin: 0 auto;
-    padding: clamp(3rem, 8vw, 6rem) 2rem 3rem;
-    background-color: #00161c;
-    color: #fff;
-  }
-  
-  .secaoDestaque-titulo {
-    margin-bottom: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(1.6rem, 4vw, 2rem);
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
-  }
-  
-  .secaoDestaque-texto {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 1.125rem;
-    line-height: 1.5;
-  }
-  
-  .btnPadrao {
-    display: inline-block;
-    padding: 0.45em 1em;
-    border: 0;
-    border-radius: 5px;
-    background-color: #b72e2e;
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.1rem;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .btnPadrao:hover,
-  .btnPadrao:focus-visible {
-    background-color: #982525;
-  }
-  
+
   .secaoDiferenciais {
-    position: relative;
-    width: min(1000px, calc(100% - 2rem));
-    margin: -5rem auto 0; 
-    padding: 3.5rem;
-    background-color: #f7f4f4;
+    padding: 2.5rem;
   }
-  
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
+
   .diferenciais {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2.5rem;
-    list-style: none;
-    text-align: left;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
-  .diferenciais-diferencial img {
-    display: block;
-    width: auto;
-    height: 42px;
-    margin: 0 auto 1.5rem;
-    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  .diferenciais-diferencial h2 {
-    margin-bottom: 0.75rem;
-    color: #4f4c4c;
-    font-size: 1.2rem;
-    text-align: center;
-    text-transform: uppercase;
+
+  .cabecalho-nav ul {
+    gap: 0 0.75rem;
   }
-  
-  .diferenciais-diferencial p {
-    color: #222;
-    line-height: 1.5;
+
+  .cabecalho-nav-item a {
+    font-size: 0.9rem;
   }
-  
-  @media (max-width: 900px) {
-    .cabecalho {
-      padding: 1rem 5%;
-    }
-  
-    .secaoDiferenciais {
-      padding: 2.5rem;
-    }
-  
-    .diferenciais {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+
+  .conteudo {
+    min-height: auto;
+    padding-bottom: 2rem;
   }
-  
-  @media (max-width: 600px) {
-    .cabecalho {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    .cabecalho-nav ul {
-      gap: 0 0.75rem;
-    }
-  
-    .cabecalho-nav-item a {
-      font-size: 0.9rem;
-    }
-  
-    .conteudo {
-      min-height: auto;
-      padding-bottom: 2rem;
-    }
-  
-    .secaoDestaque {
-      padding: 3rem 1.25rem 5rem;
-    }
-  
-    .secaoDestaque-texto {
-      font-size: 1rem;
-    }
-  
-    .secaoDiferenciais {
-      margin-top: -3rem;
-      padding: 2rem 1.5rem;
-    }
-  
-    .diferenciais {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
+
+  .secaoDestaque {
+    padding: 3rem 1.25rem 5rem;
   }
-  
+
+  .secaoDestaque-texto {
+    font-size: 1rem;
+  }
+
+  .secaoDiferenciais {
+    margin-top: -0.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .diferenciais {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
